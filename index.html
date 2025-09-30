@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PixelVault</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,42 +11,73 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-sm bg-light ">
-      <div class="container-fluid ">
-        <a href="#" class="navbar-brand">LOGO</a>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-sm bg-dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand text-light">Logo</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-warning"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#collapsibleNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="collapsibleNavbar"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="" class="nav-link">HOME</a>
+              <a href="" class="nav-link text-light">HOME</a>
             </li>
             <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">GALLERY</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">Ghost of Tsushima</a></li>
-                <li><a href="#" class="dropdown-item">The Witcher 3</a></li>
-                <li><a href="#" class="dropdown-item">otherGame</a></li>
-                <li><a href="#" class="dropdown-item">otherGame</a></li>
+              <a
+                href="#"
+                class="nav-link dropdown-toggle text-light"
+                role="button"
+                data-bs-toggle="dropdown"
+                >GALLERY</a
+              >
+              <ul class="dropdown-menu bg-dark">
+                <li>
+                  <a href="#" class="dropdown-item text-light"
+                    >Ghost of Tsushima</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item text-light">The Witcher 3</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item text-light">otherGame</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item text-light">otherGame</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">CONTACT</a>
+              <a href="" class="nav-link text-light">CONTACT</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">ABOUT</a>
+              <a href="" class="nav-link text-light">ABOUT</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="homeImage">
+      <img
+        src="images/beautiful-natural-view-landscape.jpg"
+        class="w-100"
+        alt=""
+      />
+      <div class="bottom-left"></div>
+      <div class="bottom-right">Screenshot by H34tWave</div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
