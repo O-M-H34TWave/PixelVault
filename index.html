@@ -10,64 +10,12 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <link rel="stylesheet" href="css/style.css" />
 
   <body class="bg-dark">
-    <nav class="navbar navbar-expand-sm bg-dark">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand text-light">Logo</a>
-        <button
-          class="navbar-toggler bg-warning"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="collapsibleNavbar"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="" class="nav-link text-light">HOME</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle text-light"
-                role="button"
-                data-bs-toggle="dropdown"
-                >GALLERY</a
-              >
-              <ul class="dropdown-menu bg-dark">
-                <li>
-                  <a href="#" class="dropdown-item text-light"
-                    >Ghost of Tsushima</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="dropdown-item text-light">The Witcher 3</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-item text-light">otherGame</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-item text-light">otherGame</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link text-light">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link text-light">ABOUT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar"></div>
+    
     <div class="homeImage">
       <img
         src="images/beautiful-natural-view-landscape.jpg"
@@ -83,5 +31,13 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    
+    <script>
+      fetch("layout/navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

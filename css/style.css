@@ -3,10 +3,6 @@
   text-align: center;
   color: white;
 }
-.homeImage:hover{
-    opacity: 95%;
-
-}
 
 .bottom-left {
   position: absolute;
@@ -20,6 +16,13 @@
     right: 16px;
     font-size: 15px;
 }
-.dropdown-item:hover{
-    background-color: orangered;
+
+.dropdown-item{
+  color: white;
+  transition: all 0.5s ease;
 }
+
+.dropdown-item:hover{
+    background-color:#FF073A ;
+    color: white;
+  }
